@@ -1,0 +1,21 @@
+USE [Flightservice]
+GO
+
+/****** Object:  Table [dbo].[COUNTRIES]    Script Date: 7/27/2020 12:27:16 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[COUNTRIES](
+	[countryname] [varchar](60) NOT NULL,
+	[time_diff_gri] [nchar](10) NOT NULL,
+ CONSTRAINT [PK_countries] PRIMARY KEY CLUSTERED 
+(
+	[countryname] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
